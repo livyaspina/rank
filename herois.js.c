@@ -1,9 +1,8 @@
 function calcularRank(vitorias, derrotas) {
-    //la o saldo
+    //O saldo
     let saldoVitorias = vitorias - derrotas;
     let nivel = "";
 
-    
     if (vitorias <= 10) {
         nivel = "Ferro";
     } else if (vitorias <= 20) {
@@ -20,10 +19,10 @@ function calcularRank(vitorias, derrotas) {
         nivel = "Imortal";
     }
 
-    
     return `O Herói tem de saldo de ${saldoVitorias} está no nível de ${nivel}`;
 }
 
 // Exemplo
 let resultado = calcularRank(10, 10);
 console.log(resultado);
+
